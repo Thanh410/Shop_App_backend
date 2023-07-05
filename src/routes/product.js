@@ -60,6 +60,8 @@ router.get("/find/:id", async (req, res) => {
 router.get("/", async (req, res) => {
   const qNew = req.query.new;
   const qCategory = req.query.category;
+  const qTitle = req.query.title === "Áo thể thao 01";
+
   try {
     let products;
 
